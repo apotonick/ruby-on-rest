@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+apple:
+  id: 1
+  title: Apple
+
+orange:
+  id: 2
+  title: Orange
