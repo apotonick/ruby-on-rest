@@ -1,4 +1,5 @@
 class BowlsController < ApplicationController
+  include Roar::Rails::ControllerAdditions
   respond_to :json
 
   def show
@@ -15,10 +16,5 @@ class BowlsController < ApplicationController
     bowl.save
     
     respond_with bowl
-  end
-  
-
-  def self.responder
-    Class.new(super).send :include, Roar::Rails::Responder
   end
 end

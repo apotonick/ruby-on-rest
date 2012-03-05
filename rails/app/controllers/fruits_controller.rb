@@ -1,4 +1,5 @@
 class FruitsController < ApplicationController
+  include Roar::Rails::ControllerAdditions
   respond_to :json
 
   def show
@@ -11,10 +12,5 @@ class FruitsController < ApplicationController
     fruit = Fruit.new.extend(FruitRepresenter).from_json(request.body.string)
     
     respond_with fruit
-  end
-  
-
-  def self.responder
-    Class.new(super).send :include, Roar::Rails::Responder
   end
 end
