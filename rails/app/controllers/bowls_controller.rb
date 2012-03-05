@@ -2,9 +2,7 @@ class BowlsController < ApplicationController
   respond_to :json
 
   def show
-    fruit = Fruit.find_by_id(params[:id])
-    
-    respond_with fruit
+    respond_with Bowl.find_by_id(params[:id])
   end
   
   def create
