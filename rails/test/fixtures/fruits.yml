@@ -7,3 +7,15 @@ apple:
 orange:
   id: 2
   title: Orange
+
+banana:
+  id: 3
+  title: Banana
+  
+Mango:
+  id: 4
+  title: Mango
+  
+Cherry:
+  id: 5
+  title: Cherry
