@@ -1,7 +1,7 @@
 PATH
   remote: ../../roar
   specs:
-    roar (0.10.1)
+    roar (0.10.2)
       representable (>= 1.1.7)
 
 PATH
